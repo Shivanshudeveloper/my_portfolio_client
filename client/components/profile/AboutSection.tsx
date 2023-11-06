@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 
 import {
@@ -7,8 +9,9 @@ import {
     CardTitle,
     CardContent
 } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
-import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon , BackpackIcon} from "@radix-ui/react-icons"
+import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon , BackpackIcon, ChatBubbleIcon } from "@radix-ui/react-icons"
 
 const AboutSection = () => {
   return (
@@ -16,7 +19,16 @@ const AboutSection = () => {
         <Card className="w-[975px]">
             <CardHeader>
                 <CardTitle>
-                    About Me
+                    <div className="flex justify-between">
+                        <p>
+                            About Me
+                        </p>
+                        <Button variant="outline" >
+                            <ChatBubbleIcon className="mr-2 h-4 w-4" /> 
+                            Contact Me
+                        </Button>
+                    </div>
+
                 </CardTitle>
             </CardHeader>
 
