@@ -18,15 +18,16 @@ import { CalendarIcon } from "@radix-ui/react-icons"
 const CalandarSection = () => {
   const router = useRouter();
 
-  const [date, setDate] = React.useState<Date | undefined>(new Date())
+  const [date, setDate] = React.useState<Date | null>(new Date())
+  
 
   let calenderLink = "https://calendly.com/consultwithshiv/15min";
 
   const bookMeeting = async () => {
-    console.log(date);
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so add 1
     const day = String(date.getDate()).padStart(2, '0');
+    
     const formattedDate = `${year}-${month}-${day}`;
     const formattedMonth = `${year}-${month}`;
     const newTabUrl = `${calenderLink}?month=${formattedMonth}&date=${formattedDate}`;
