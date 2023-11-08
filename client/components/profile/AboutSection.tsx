@@ -15,6 +15,7 @@ import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon, BackpackIcon, ChatBubbl
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import { Label } from '../ui/label'
 import { Input } from '../ui/input'
+import { Textarea } from '../ui/textarea'
 
 const AboutSection = () => {
     return (
@@ -42,20 +43,24 @@ const AboutSection = () => {
                                             Click Here to contact us
                                         </DialogDescription>
                                     </DialogHeader>
-                                    <div className="grid gap-4 py-4">
-                                        <div className="grid grid-cols-4 items-center gap-4">
-                                            <Label htmlFor="name" className="text-right">
-                                                Email
-                                            </Label>
-                                            <Input id="name" value="email" className="col-span-3" />
+
+
+
+                                    <form>
+                                        <div className="grid w-full items-center gap-4">
+                                            <div className="flex flex-col space-y-1.5">
+                                                <Label htmlFor="name">Name</Label>
+                                                <Input id="name" placeholder="Name of your project" />
+                                            </div>
+                                            <div className="flex flex-col space-y-1.5">
+                                                <Label htmlFor="framework">Body</Label>
+                                                <Textarea placeholder="Type your message here." />
+                                            </div>
                                         </div>
-                                        <div className="grid grid-cols-4 items-center gap-4">
-                                            <Label htmlFor="username" className="text-right">
-                                                Body
-                                            </Label>
-                                            <Input id="username" value="body" className="col-span-3" />
-                                        </div>
-                                    </div>
+                                    </form>
+
+
+
                                     <DialogFooter>
                                         <Button type="submit">Submit</Button>
                                     </DialogFooter>
