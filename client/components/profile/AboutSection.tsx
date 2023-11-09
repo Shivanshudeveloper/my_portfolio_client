@@ -54,7 +54,7 @@ const AboutSection = () => {
                                             </div>
                                             <div className="flex flex-col space-y-1.5">
                                                 <Label htmlFor="framework">Body</Label>
-                                                <Textarea placeholder="Type your message here." />
+                                                <Textarea placeholder="Type your message here." className='h-[16rem]' />
                                             </div>
                                         </div>
                                     </form>
