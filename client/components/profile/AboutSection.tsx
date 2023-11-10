@@ -137,7 +137,7 @@ const AboutSection = () => {
                                 <div className="space-y-1">
                                     <p className="text-sm font-medium leading-none">Opportunity</p>
                                     <p className="text-sm text-muted-foreground">
-                                        Work from Home & Work from Office
+                                        Work from Home &#38; Work from Office
                                     </p>
                                 </div>
                             </div>
