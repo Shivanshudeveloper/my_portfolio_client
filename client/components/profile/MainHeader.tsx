@@ -32,7 +32,7 @@ const MainHeader = () => {
                       Shivanshu Gupta
                       <br />
                       <CardDescription>
-                        Some random description about me come here
+                        Project Manager/Consultant for SaaS businesses
                       </CardDescription>
                     </p>
                   </div>
