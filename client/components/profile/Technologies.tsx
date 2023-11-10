@@ -28,7 +28,17 @@ const Technologies = () => {
 
             <CardDescription className='-mt-1' >
                 <CardContent>
-                    <div className="flex space-x-4 text-sm text-muted-foreground">
+                    <div className="flex space-x-4 text-sm text-white">
+                        <div className="flex items-center">
+                            <CircleIcon className="mr-1 h-3 w-3 fill-orange-400 text-orange-400" />
+                            Project Management
+                        </div>
+
+                        <div className="flex items-center">
+                            <CircleIcon className="mr-1 h-3 w-3 fill-purple-500 text-purple-500" />
+                            SCRUM Master
+                        </div>
+
                         <div className="flex items-center">
                             <CircleIcon className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" />
                             TypeScript
@@ -55,7 +65,7 @@ const Technologies = () => {
                         </div>
 
                         <div className="flex items-center">
-                            <CircleIcon className="mr-1 h-3 w-3 fill-blue-800 text-blue-800" />
+                            <CircleIcon className="mr-1 h-3 w-3 fill-purple-800 text-purple-800" />
                             Python
                         </div>
 

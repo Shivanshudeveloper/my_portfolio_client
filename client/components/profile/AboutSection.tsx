@@ -41,11 +41,11 @@ const AboutSection = () => {
                                         <div className="flex justify-between space-x-4">
                                             <div className="space-y-1">
                                                 <p className="text-sm">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                                    I provide professional SaaS consultation and development support for clients worldwide. Many of them face challenges in launching their MVPs and managing teams. My expertise includes guiding them on key elements such as Tech Stack, 3rd Party Libraries, Business Models, Payment Gateways, and more, ensuring a streamlined and successful product development process.
                                                 </p>
                                                 <div className="flex items-center pt-2">
                                                     <span className="text-xs text-muted-foreground">
-                                                        Since December 2021
+                                                        Since December 2019
                                                     </span>
                                                 </div>
                                             </div>
