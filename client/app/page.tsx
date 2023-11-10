@@ -7,15 +7,16 @@ import CalandarSection from "@/components/profile/CalandarSection"
 export default function Home() {
   return (
     <>
-      
+
       <div>
         <MainHeader />
       </div>
 
-      <div className="mt-2 grid grid-flow-col justify-stretch gap-2">
-          <AboutSection />
+      {/* mt-2 md:grid md:grid-flow-col md:justify-stretch md:gap-2 */}
+      <div className="flex justify-items-stretch gap-2 mt-2 flex-wrap">
+        <AboutSection />
 
-          <CalandarSection />
+        <CalandarSection />
       </div>
 
     </>
