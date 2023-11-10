@@ -3,6 +3,9 @@
 import MainHeader from "@/components/profile/MainHeader"
 import AboutSection from "@/components/profile/AboutSection"
 import CalandarSection from "@/components/profile/CalandarSection"
+import Technologies from "@/components/profile/Technologies"
+
+
 
 export default function Home() {
   return (
@@ -18,6 +21,9 @@ export default function Home() {
           <CalandarSection />
       </div>
 
+      <div className="mt-2">
+        <Technologies />
+      </div>
     </>
   )
 }

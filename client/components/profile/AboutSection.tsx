@@ -11,7 +11,13 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
-import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon, BackpackIcon, ChatBubbleIcon } from "@radix-ui/react-icons"
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "@/components/ui/hover-card"
+
+import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon, BackpackIcon, ChatBubbleIcon, InfoCircledIcon } from "@radix-ui/react-icons"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import { Label } from '../ui/label'
 import { Input } from '../ui/input'
@@ -24,8 +30,29 @@ const AboutSection = () => {
                 <CardHeader>
                     <CardTitle>
                         <div className="flex justify-between">
-                            <p>
+                            <p className="flex items-center">
                                 About Me
+
+                                <HoverCard>
+                                    <HoverCardTrigger asChild>
+                                        <InfoCircledIcon className="ml-2 h-4 w-4 cursor-pointer fill-sky-400 text-sky-400" />
+                                    </HoverCardTrigger>
+                                    <HoverCardContent className="w-80">
+                                        <div className="flex justify-between space-x-4">
+                                            <div className="space-y-1">
+                                                <p className="text-sm">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                                </p>
+                                                <div className="flex items-center pt-2">
+                                                    <span className="text-xs text-muted-foreground">
+                                                        Since December 2021
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </HoverCardContent>
+                                </HoverCard>
+
                             </p>
 
                             <Dialog>
@@ -36,7 +63,7 @@ const AboutSection = () => {
                                     </Button>
 
                                 </DialogTrigger>
-                                <DialogContent className="sm:max-w-[425px]">
+                                <DialogContent className="sm:max-w-[525px]">
                                     <DialogHeader>
                                         <DialogTitle>Contact Me</DialogTitle>
                                         <DialogDescription>
@@ -49,8 +76,8 @@ const AboutSection = () => {
                                     <form>
                                         <div className="grid w-full items-center gap-4">
                                             <div className="flex flex-col space-y-1.5">
-                                                <Label htmlFor="name">Name</Label>
-                                                <Input id="name" placeholder="Name of your project" />
+                                                <Label htmlFor="name">Email</Label>
+                                                <Input id="email" placeholder="example@gmail.com" />
                                             </div>
                                             <div className="flex flex-col space-y-1.5">
                                                 <Label htmlFor="framework">Body</Label>
@@ -110,7 +137,7 @@ const AboutSection = () => {
                                 <div className="space-y-1">
                                     <p className="text-sm font-medium leading-none">Opportunity</p>
                                     <p className="text-sm text-muted-foreground">
-                                        Turn off all notifications.
+                                        Work from Home & Work from Office
                                     </p>
                                 </div>
                             </div>
