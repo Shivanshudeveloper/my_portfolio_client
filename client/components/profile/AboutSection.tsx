@@ -41,7 +41,7 @@ const AboutSection = () => {
                   <ToastAction altText="Goto schedule to undo">Undo Message</ToastAction>
                 ),
             })
-        }, 3000);
+        }, 1000);
     }
 
     return (

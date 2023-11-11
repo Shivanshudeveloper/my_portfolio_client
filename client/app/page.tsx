@@ -5,6 +5,7 @@ import AboutSection from "@/components/profile/AboutSection"
 import CalandarSection from "@/components/profile/CalandarSection"
 import Technologies from "@/components/profile/Technologies"
 import Gigs from "@/components/profile/Gigs"
+import Faq from "@/components/profile/Faq"
 
 
 
@@ -29,6 +30,10 @@ export default function Home() {
 
       <div className="mt-2">
         <Gigs />
+      </div>
+
+      <div className="mt-2">
+        <Faq />
       </div>
 
     </>
