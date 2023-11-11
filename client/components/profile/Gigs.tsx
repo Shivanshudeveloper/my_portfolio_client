@@ -69,7 +69,7 @@ const Gigs = () => {
                 <CardContent>
                 <div className="text-2xl font-bold">$50</div>
                 <p className="text-xs mt-2">
-                    Creating comprehensive documentation, devising a roadmap tailored to your SaaS concept, and conducting thorough validation, research , and analyzing potential risks for a comprehensive understanding. .
+                    Creating comprehensive documentation, devising a roadmap tailored to your SaaS concept, and conducting thorough validation, research , and analyzing potential risks for a comprehensive understanding.
                 </p>
                 </CardContent>
                 <CardFooter className="flex justify-end">
