@@ -25,7 +25,7 @@ const MainHeader = () => {
                 <CardTitle>
                   <div className="flex flex-row justify-items-start">
                     <Avatar>
-                      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                      <AvatarImage src="/shiva.jpeg" alt="Shivanshu Gupta" />
                       <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
                     <p className='ml-2 py-1' >
