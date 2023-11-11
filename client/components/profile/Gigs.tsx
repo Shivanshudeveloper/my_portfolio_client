@@ -36,7 +36,7 @@ const Gigs = () => {
                 </CardHeader>
                 <CardContent>
                 <div className="text-2xl font-bold">$5</div>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs mt-2">
                 Providing SaaS consultation, resolving doubts, validating ideas, offering honest opinions, and analyzing potential risks for a comprehensive understanding.                </p>
                 </CardContent>
 
@@ -68,7 +68,7 @@ const Gigs = () => {
                 </CardHeader>
                 <CardContent>
                 <div className="text-2xl font-bold">$50</div>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs mt-2">
                     Creating comprehensive documentation, devising a roadmap tailored to your SaaS concept, and conducting thorough validation, research , and analyzing potential risks for a comprehensive understanding. .
                 </p>
                 </CardContent>
@@ -100,7 +100,7 @@ const Gigs = () => {
                 </CardHeader>
                 <CardContent>
                 <div className="text-2xl font-bold">$250</div>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs mt-2">
                     Performing rigorous SaaS due diligence, acting as SCRUM Master for task oversight, leading regular team updates, ensuring deadline adherence, and proactively managing and mitigating potential risks.                </p>
                 </CardContent>
                 <CardFooter className="flex justify-end">

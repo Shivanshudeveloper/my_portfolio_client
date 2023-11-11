@@ -127,7 +127,7 @@ const AboutSection = () => {
                                 <div className="space-y-1">
                                     <p className="text-sm font-medium leading-none">Projects</p>
                                     <p className="text-sm text-muted-foreground">
-                                        Turn off all notifications.
+                                        Mainly SaaS related projects.
                                     </p>
                                 </div>
                             </div>
