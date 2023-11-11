@@ -17,6 +17,9 @@ import {
     HoverCardTrigger,
 } from "@/components/ui/hover-card"
 
+import { ToastAction } from "@/components/ui/toast"
+import { useToast } from "@/components/ui/use-toast"
+
 import { BellIcon, EyeOpenIcon, PersonIcon, MaskOffIcon, BackpackIcon, ChatBubbleIcon, InfoCircledIcon } from "@radix-ui/react-icons"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '../ui/dialog'
 import { Label } from '../ui/label'
@@ -24,6 +27,23 @@ import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 
 const AboutSection = () => {
+    const { toast } = useToast()
+    const [open, setOpen] = React.useState(false);
+
+
+    const submitContact = () => {
+        setOpen(false);
+        setTimeout(() => {
+            toast({
+                title: "Message send Successfully",
+                description: "Your message to Shivanshu Gupta was send, we will let you know if he responds back.",
+                action: (
+                  <ToastAction altText="Goto schedule to undo">Undo Message</ToastAction>
+                ),
+            })
+        }, 3000);
+    }
+
     return (
         <>
             <Card className="w-[975px]">
@@ -55,9 +75,9 @@ const AboutSection = () => {
 
                             </p>
 
-                            <Dialog>
+                            <Dialog open={open} >
                                 <DialogTrigger asChild>
-                                    <Button variant="outline" >
+                                    <Button onClick={() => setOpen(true)} variant="outline" >
                                         <ChatBubbleIcon className="mr-2 h-4 w-4" />
                                         Contact Me
                                     </Button>
@@ -89,7 +109,7 @@ const AboutSection = () => {
 
 
                                     <DialogFooter>
-                                        <Button type="submit">Submit</Button>
+                                        <Button onClick={submitContact} type="submit">Submit</Button>
                                     </DialogFooter>
                                 </DialogContent>
                             </Dialog>
