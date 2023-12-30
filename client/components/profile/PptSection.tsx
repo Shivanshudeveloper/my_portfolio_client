@@ -3,7 +3,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -11,6 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+
+import Autoplay from "embla-carousel-autoplay"
 
 const images = [
     {
@@ -50,28 +51,31 @@ const images = [
 
 const PptSection = () => {
   return (
-    <div className='items-center justify-center'>
-        <Carousel opts={{ loop: true, align: "start" }} className="w-[975px] ">
-            <CarouselContent>
-                {
-                    images.map((items) => (
-                        <CarouselItem key={items?.id}>
-                            <Image
-                                src={items?.path}
-                                width={900}
-                                className='cursor-pointer'
-                                height={900}
-                                alt="Shivanshu"
-                            />
-                        </CarouselItem>
-                    ))
-                }
-            </CarouselContent>
-            <CarouselPrevious />
-        <CarouselNext />
-        </Carousel>
-        
-    </div>
+    <>
+        <center>
+            <Carousel 
+                opts={{ loop: true, align: "start" }} 
+            >
+                <CarouselContent>
+                    {
+                        images.map((items) => (
+                            <CarouselItem key={items?.id}>
+                                <Image
+                                    src={items?.path}
+                                    width={900}
+                                    className='cursor-pointer'
+                                    height={900}
+                                    alt="Shivanshu"
+                                />
+                            </CarouselItem>
+                        ))
+                    }
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+        </center>
+    </>
   )
 }
 

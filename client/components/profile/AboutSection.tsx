@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-
+import { useRouter } from 'next/navigation'
 import {
     Card,
     CardDescription,
@@ -27,6 +27,8 @@ import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 
 const AboutSection = () => {
+    const router = useRouter()
+
     const { toast } = useToast()
     const [open, setOpen] = React.useState(false);
 
@@ -42,6 +44,10 @@ const AboutSection = () => {
                 ),
             })
         }, 1000);
+    }
+
+    const changePage = () => {
+        router.push('/demo', { scroll: false })
     }
 
     return (
@@ -77,11 +83,12 @@ const AboutSection = () => {
 
                             <Dialog open={open} >
                                 <DialogTrigger asChild>
-                                    <Button onClick={() => setOpen(true)} variant="outline" >
-                                        <ChatBubbleIcon className="mr-2 h-4 w-4" />
-                                        Contact Me
-                                    </Button>
-
+                                    <>
+                                        <Button onClick={() => setOpen(true)} variant="outline" >
+                                            <ChatBubbleIcon className="mr-2 h-4 w-4" />
+                                            Contact Me
+                                        </Button>
+                                    </>
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-[525px]">
                                     <DialogHeader>
@@ -122,12 +129,12 @@ const AboutSection = () => {
                     <Card className='border-none'>
                         <CardContent className="grid gap-5">
 
-                            <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground cursor-pointer">
+                            <div onClick={changePage} className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground cursor-pointer">
                                 <BellIcon className="mt-px h-5 w-5" />
                                 <div className="space-y-1">
-                                    <p className="text-sm font-medium leading-none">Work</p>
+                                    <p className="text-sm font-medium leading-none">How do it work?</p>
                                     <p className="text-sm text-muted-foreground">
-                                        Email digest, mentions & all activity.
+                                        Check out the presentation made.
                                     </p>
                                 </div>
                             </div>

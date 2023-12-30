@@ -25,7 +25,7 @@ export default function Home() {
       </div> */}
 
       <div className="flex justify-items-stretch gap-2 mt-2 flex-wrap">
-        <PptSection />
+        <AboutSection />
 
         <CalandarSection />
       </div>

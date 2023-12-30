@@ -33,7 +33,7 @@ const CalandarSection = () => {
 
   return (
     <>
-      <Card className="w-full max-w-xs">
+      <Card className="w-[352px]">
         <CardHeader>
           <CardTitle>
             Book a meeting
