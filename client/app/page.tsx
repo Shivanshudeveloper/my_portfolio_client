@@ -6,8 +6,7 @@ import CalandarSection from "@/components/profile/CalandarSection"
 import Technologies from "@/components/profile/Technologies"
 import Gigs from "@/components/profile/Gigs"
 import Faq from "@/components/profile/Faq"
-import PptSection from "@/components/profile/PptSection"
-
+import ImportantNotification from "@/components/profile/ImportantNotification"
 
 
 export default function Home() {
@@ -23,6 +22,9 @@ export default function Home() {
       {/* <div className="mt-2">
         <PptSection />
       </div> */}
+      <div className="mt-2">
+        <ImportantNotification />
+      </div>
 
       <div className="flex justify-items-stretch gap-2 mt-2 flex-wrap">
         <AboutSection />
