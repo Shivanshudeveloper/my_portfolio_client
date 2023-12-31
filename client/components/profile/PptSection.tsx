@@ -62,17 +62,15 @@ const PptSection = () => {
                             <CarouselItem key={items?.id}>
                                 <Image
                                     src={items?.path}
-                                    width={900}
+                                    width={1000}
                                     className='cursor-pointer'
-                                    height={900}
+                                    height={1000}
                                     alt="Shivanshu"
                                 />
                             </CarouselItem>
                         ))
                     }
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </center>
     </>

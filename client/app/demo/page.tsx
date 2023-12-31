@@ -29,12 +29,6 @@ const page = () => {
 
     return (
         <>
-            <center>
-                <Button onClick={bookMeeting} className='w-50 mb-2'>
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    Book a meeting
-                </Button>
-            </center>
             <PptSection />
         </>
     )
