@@ -7,6 +7,7 @@ import Technologies from "@/components/profile/Technologies"
 import Gigs from "@/components/profile/Gigs"
 import Faq from "@/components/profile/Faq"
 import ImportantNotification from "@/components/profile/ImportantNotification"
+import Books from "@/components/profile/Books"
 
 
 export default function Home() {
@@ -42,6 +43,10 @@ export default function Home() {
 
       <div className="mt-2">
         <Faq />
+      </div>
+
+      <div className="mt-2">
+        <Books />
       </div>
 
     </>

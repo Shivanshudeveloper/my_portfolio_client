@@ -3,9 +3,7 @@ import React from 'react'
 import {
     Card,
     CardContent,
-    CardFooter,
     CardHeader,
-    CardDescription,
     CardTitle,
 } from "@/components/ui/card"
 import { Button } from '@/components/ui/button'
